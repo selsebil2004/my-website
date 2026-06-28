@@ -1,0 +1,351 @@
+<!DOCTYPE html >
+<html lang="arb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=dvice-width, initial-scale=1.0">
+    <title>Power Zone Gym</title>
+   <link rel ="stylesheet" href="style.css" >
+   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+
+    <!-- ===== CURSOR ===== -->
+    <div class="cursor-dot"  id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- باقي الكود... -->
+  <nav>
+    <div class="logo">&lt;PZ/&gt;</div> 
+    <ul>
+        <li><a herf="#services">خدماتنا</a></li>
+        <li><a herf="#register">تسجيل</a></li>
+        <li><a herf="#contact">تواصلنا معنا</a></li>
+    </ul>
+  </nav>
+
+<!-----hero section ---->
+ <!-- ====== قسم الهيرو ====== -->
+<section id="hero">
+
+    <!-- خطوط الشبكة الخلفية -->
+    <div class="grid-bg"></div>
+
+    <!-- دوائر ضوئية ملونة -->
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <!-- المحتوى الأيسر (النص) -->
+    <div class="hero-left">
+        <div class="hero-tag">// القاعة الرياضية الأولى في الجزائر</div>
+
+        <div class="hero-code">
+            <span class="line-gray">// اكسر حدودك هنا</span>
+            <span class="line-green">&lt;PowerZone/&gt;</span>
+            <span class="line-white">
+                &nbsp;&nbsp;type=<span class="line-cyan">"</span><span id="typed"></span><span class="cursor">|</span><span class="line-cyan">"</span>
+            </span>
+            <span class="line-green">/&gt;</span>
+        </div>
+
+        <p class="hero-desc">
+            // تدريب احترافي · أجهزة متطورة<br>
+            // مدربون معتمدون · نتائج مضمونة
+        </p>
+
+        <div class="hero-btns">
+            <button class="btn-primary" 
+              onclick="document.getElementById('register')
+              .scrollIntoView({behavior:'smooth'})">
+                ابدأ_رحلتك( )
+            </button>
+            <button class="btn-secondary"
+              onclick="document.getElementById('services')
+              .scrollIntoView({behavior:'smooth'})">
+                استكشف( )
+            </button>
+        </div>
+
+        <!-- إحصائيات -->
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-num">1200+</div>
+                <div class="stat-lbl">MEMBERS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">25+</div>
+                <div class="stat-lbl">TRAINERS</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">8yr</div>
+                <div class="stat-lbl">EXPERIENCE</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- المحتوى الأيمن (الشخصية) -->
+    <!-- الشخصية الرياضية -->
+        <div class="hero-right">
+            <div class="athlete-wrap" id="ath">
+                <div class="glow-ring"></div>
+
+                <svg width="340" height="560" viewBox="0 0 340 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <radialGradient id="skin1" cx="45%" cy="35%" r="65%">
+                      <stop offset="0%" stop-color="#c68642"/>
+                      <stop offset="60%" stop-color="#a0622a"/>
+                      <stop offset="100%" stop-color="#7a4520"/>
+                    </radialGradient>
+                    <radialGradient id="skin2" cx="40%" cy="30%" r="60%">
+                      <stop offset="0%" stop-color="#b87832"/>
+                      <stop offset="100%" stop-color="#7a4520"/>
+                    </radialGradient>
+                    <linearGradient id="shortsG" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#1a1a2e"/>
+                      <stop offset="100%" stop-color="#0d0d18"/>
+                    </linearGradient>
+                    <linearGradient id="shortsStripe" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#7fff00"/>
+                      <stop offset="100%" stop-color="#4a9900"/>
+                    </linearGradient>
+                    <linearGradient id="shoeG" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#222"/>
+                      <stop offset="100%" stop-color="#111"/>
+                    </linearGradient>
+                    <linearGradient id="gloveG" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#1a1a2e"/>
+                      <stop offset="100%" stop-color="#0d0d18"/>
+                    </linearGradient>
+                    <filter id="glow">
+                      <feGaussianBlur stdDeviation="3" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                    <filter id="shadow">
+                      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="rgba(0,0,0,.6)"/>
+                    </filter>
+                  </defs>
+                  <ellipse cx="170" cy="555" rx="85" ry="8" fill="rgba(0,0,0,.5)"/>
+                  <ellipse cx="138" cy="530" rx="38" ry="12" fill="url(#shoeG)" filter="url(#shadow)"/>
+                  <rect x="104" y="518" width="68" height="16" rx="8" fill="#1a1a1a"/>
+                  <rect x="106" y="526" width="64" height="3" rx="1.5" fill="rgba(127,255,0,.5)" filter="url(#glow)"/>
+                  <ellipse cx="202" cy="530" rx="38" ry="12" fill="url(#shoeG)" filter="url(#shadow)"/>
+                  <rect x="168" y="518" width="68" height="16" rx="8" fill="#1a1a1a"/>
+                  <rect x="170" y="526" width="64" height="3" rx="1.5" fill="rgba(127,255,0,.5)" filter="url(#glow)"/>
+                  <path d="M128 430 Q118 470 122 515 Q132 525 148 518 Q155 470 148 430 Z" fill="url(#skin1)"/>
+                  <path d="M192 430 Q185 470 188 515 Q198 525 218 518 Q222 470 212 430 Z" fill="url(#skin1)"/>
+                  <ellipse cx="138" cy="432" rx="20" ry="16" fill="url(#skin2)"/>
+                  <ellipse cx="202" cy="432" rx="20" ry="16" fill="url(#skin2)"/>
+                  <path d="M118 310 Q105 370 120 435 Q138 445 158 430 Q165 365 158 310 Z" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <path d="M182 310 Q178 365 180 430 Q198 445 218 432 Q232 370 222 310 Z" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <path d="M108 280 Q100 315 118 315 Q138 330 170 328 Q202 330 222 315 Q240 315 232 280 Q215 265 170 268 Q125 265 108 280 Z" fill="url(#shortsG)"/>
+                  <rect x="108" y="280" width="5" height="50" rx="2.5" fill="url(#shortsStripe)" opacity=".8"/>
+                  <rect x="227" y="280" width="5" height="50" rx="2.5" fill="url(#shortsStripe)" opacity=".8"/>
+                  <path d="M108 280 Q170 265 232 280 Q232 268 170 258 Q108 268 108 280 Z" fill="#111118"/>
+                  <path d="M115 271 Q170 260 225 271" stroke="rgba(127,255,0,.4)" stroke-width="1.5" fill="none"/>
+                  <path d="M115 165 Q108 220 108 275 Q140 292 170 290 Q200 292 232 275 Q232 220 225 165 Q200 148 170 145 Q140 148 115 165 Z" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <line x1="170" y1="175" x2="170" y2="280" stroke="rgba(60,30,5,.35)" stroke-width="2"/>
+                  <path d="M145 200 Q170 196 195 200" stroke="rgba(60,30,5,.3)" stroke-width="1.8" fill="none"/>
+                  <path d="M142 220 Q170 216 198 220" stroke="rgba(60,30,5,.3)" stroke-width="1.8" fill="none"/>
+                  <path d="M140 240 Q170 236 200 240" stroke="rgba(60,30,5,.3)" stroke-width="1.8" fill="none"/>
+                  <path d="M115 165 Q115 190 140 192 Q170 196 170 182 Q155 162 140 158 Q125 158 115 165 Z" fill="url(#skin2)"/>
+                  <path d="M225 165 Q225 190 200 192 Q170 196 170 182 Q185 162 200 158 Q215 158 225 165 Z" fill="url(#skin2)"/>
+                  <ellipse cx="105" cy="162" rx="26" ry="22" fill="url(#skin1)"/>
+                  <ellipse cx="235" cy="162" rx="26" ry="22" fill="url(#skin1)"/>
+                  <path d="M82 148 Q62 120 65 95 Q68 75 85 70 Q98 68 105 80 Q112 95 108 148 Z" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <path d="M80 130 Q74 108 80 88 Q84 78 90 72" stroke="rgba(90,50,15,.45)" stroke-width="1.5" fill="none"/>
+                  <path d="M65 95 Q55 75 60 55 Q65 40 78 38 Q90 38 95 52 Q98 68 85 70 Z" fill="url(#skin2)"/>
+                  <path d="M55 35 Q48 20 55 10 Q65 2 78 6 Q90 10 92 25 Q93 38 80 42 Q65 45 55 35 Z" fill="url(#gloveG)"/>
+                  <path d="M52 33 Q70 25 92 30" stroke="rgba(127,255,0,.4)" stroke-width="1.5" fill="none"/>
+                  <circle cx="60" cy="18" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <circle cx="70" cy="13" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <circle cx="81" cy="12" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <path d="M258 148 Q272 168 275 200 Q275 220 260 228 Q245 232 238 218 Q232 200 235 148 Z" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <path d="M260 228 Q268 255 265 278 Q260 292 248 292 Q236 292 232 278 Q228 260 238 218 Z" fill="url(#skin2)"/>
+                  <path d="M230 278 Q222 295 228 310 Q236 320 250 318 Q264 315 268 300 Q270 285 260 278 Z" fill="url(#gloveG)"/>
+                  <path d="M225 295 Q248 290 270 298" stroke="rgba(127,255,0,.4)" stroke-width="1.5" fill="none"/>
+                  <circle cx="238" cy="308" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <circle cx="250" cy="312" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <circle cx="261" cy="308" r="4" fill="rgba(127,255,0,.15)" stroke="rgba(127,255,0,.3)" stroke-width="1"/>
+                  <path d="M150 145 Q150 118 160 110 Q170 105 180 110 Q190 118 190 145 Z" fill="url(#skin1)"/>
+                  <ellipse cx="170" cy="80" rx="42" ry="46" fill="url(#skin1)" filter="url(#shadow)"/>
+                  <ellipse cx="128" cy="82" rx="10" ry="13" fill="url(#skin2)"/>
+                  <ellipse cx="212" cy="82" rx="10" ry="13" fill="url(#skin2)"/>
+                  <path d="M130 55 Q135 32 170 28 Q205 32 210 55 Q205 40 170 36 Q135 40 130 55 Z" fill="#1a0f00"/>
+                  <path d="M142 66 Q153 60 165 64" stroke="#1a0f00" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  <path d="M175 64 Q187 60 198 66" stroke="#1a0f00" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  <ellipse cx="154" cy="76" rx="13" ry="10" fill="#0a0a0a"/>
+                  <ellipse cx="154" cy="76" rx="9" ry="7" fill="#3a2010"/>
+                  <ellipse cx="154" cy="76" rx="5" ry="5" fill="#1a0800"/>
+                  <ellipse cx="156" cy="74" rx="2" ry="2" fill="rgba(255,255,255,.7)"/>
+                  <ellipse cx="186" cy="76" rx="13" ry="10" fill="#0a0a0a"/>
+                  <ellipse cx="186" cy="76" rx="9" ry="7" fill="#3a2010"/>
+                  <ellipse cx="186" cy="76" rx="5" ry="5" fill="#1a0800"/>
+                  <ellipse cx="188" cy="74" rx="2" ry="2" fill="rgba(255,255,255,.7)"/>
+                  <ellipse cx="165" cy="101" rx="5" ry="3.5" fill="rgba(60,30,5,.35)"/>
+                  <ellipse cx="175" cy="101" rx="5" ry="3.5" fill="rgba(60,30,5,.35)"/>
+                  <path d="M158 110 Q165 107 170 108 Q175 107 182 110 Q178 115 170 116 Q162 115 158 110 Z" fill="rgba(100,50,20,.6)"/>
+                  <path d="M130 58 Q170 48 210 58 Q210 66 170 68 Q130 66 130 58 Z" fill="#1a1a2e" opacity=".85"/>
+                  <path d="M132 62 Q170 54 208 62" stroke="rgba(127,255,0,.5)" stroke-width="1.5" fill="none" filter="url(#glow)"/>
+                </svg>
+
+            </div>
+        </div>
+
+</section>
+
+</section>
+
+ <!---section services ----> 
+<section id ="services">
+    <h1>خدماتنا</h1>
+    <div class="cards">
+
+    <div class="card">
+        <div class="card-num">01 // STRENGTH</div>
+        <div class="card-icon">💪</div>
+        <h3>تدريب القوة</h3>
+        <p>أوزان حرة وأجهزة متطورة لبناء عضلي احترافي</p>
+    </div>
+
+    <div class="card">
+        <div class="card-num">02 // CARDIO</div>
+        <div class="card-icon">🏃</div>
+        <h3>الكارديو</h3>
+        <p>جري · دراجات · إليبتيكال لتحسين اللياقة القلبية</p>
+    </div>
+
+    <div class="card">
+        <div class="card-num">03 // COMBAT</div>
+        <div class="card-icon">🥊</div>
+        <h3>الملاكمة</h3>
+        <p>كيك بوكسينغ · ملاكمة كلاسيكية مع مدربين معتمدين دولياً</p>
+    </div>
+
+    <div class="card">
+        <div class="card-num">04 // NUTRITION</div>
+        <div class="card-icon">🥗</div>
+        <h3>التغذية الرياضية</h3>
+        <p>خطط غذائية مخصصة من خبراء تغذية معتمدين</p>
+    </div>
+    </div>
+
+</section>
+<section id="register">
+
+    <div class="sec-label">// REGISTER</div>
+    <h2 class="sec-title">اختر <span>باقتك</span></h2>
+    <p class="sec-sub">// باقات مرنة لجميع الاحتياجات</p>
+
+    <div class="reg-layout">
+
+        <!-- الباقات -->
+        <div class="plans">
+
+            <div class="plan active" onclick="selectPlan(this, 'شهري')">
+                <div>
+                    <div class="plan-name">الباقة الشهرية</div>
+                    <div class="plan-desc">// وصول كامل للمرافق</div>
+                </div>
+                <div class="plan-price">2500
+                    <small>دج/شهر</small>
+                </div>
+            </div>
+
+            <div class="plan" onclick="selectPlan(this, 'ثلاثة أشهر')">
+                <div>
+                    <div class="plan-name">باقة 3 أشهر</div>
+                    <div class="plan-desc">// توفير 15%</div>
+                </div>
+                <div class="plan-price">6500
+                    <small>دج</small>
+                </div>
+            </div>
+
+            <div class="plan" onclick="selectPlan(this, 'سنوي')">
+                <div>
+                    <div class="plan-name">الباقة السنوية</div>
+                    <div class="plan-desc">// توفير 30% + مدرب شخصي</div>
+                </div>
+                <div class="plan-price">21000
+                    <small>دج</small>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- نموذج التسجيل -->
+        <div class="form-box">
+            <h3>&gt; REGISTER_NOW.exe</h3>
+
+            <div class="form-group">
+                <label>FIRST_NAME</label>
+                <input type="text" placeholder="محمد" id="fn" />
+            </div>
+
+            <div class="form-group">
+                <label>LAST_NAME</label>
+                <input type="text" placeholder="أمين" id="ln" />
+            </div>
+
+            <div class="form-group">
+                <label>PHONE</label>
+                <input type="tel" placeholder="+213 5XX XXX XXX" id="ph" />
+            </div>
+
+            <div class="form-group">
+                <label>EMAIL</label>
+                <input type="email" placeholder="user@powerzone.dz" id="em" />
+            </div>
+
+            <div class="form-group">
+                <label>PLAN</label>
+                <select id="plan">
+                    <option value="شهري">شهري — 2500دج</option>
+                    <option value="ثلاثة أشهر">3 أشهر —6500دج</option>
+                    <option value="سنوي">سنوي — 21000دج</option>
+                </select>
+            </div>
+            <div class="success-msg" id="regOk"></div>
+            <button class="submit-btn" onclick="submitReg()">
+                [ SUBMIT → ]
+            </button>
+
+            <div class="success-msg" id="regOk">
+                ✓ SUCCESS — سنتواصل معك خلال 24 ساعة
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<!---- section contect us ----->
+<section id = "contect">
+    <h2>تواصل معنا </h2>
+    <p>📍 عين الدفلى , خميس مليانة</p>
+    <p>📞 0667762353 / 0783181793 </p>
+    <p>📧 selsebilyagoubi1@gmail.com</p>
+    <p>🕐 06:00 — 23:00 يومياً</p>
+    <p>🕐 النساء يوميا ماعدا الاحد 17:00 — 13:00  </p>
+
+
+</section>
+
+<footer>
+    <p>&lt;PZ/&gt;  — 2026 جميع الحقوق محفوظة </p>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</body>
+
+</html>
+
+
+
+
